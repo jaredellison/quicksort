@@ -1,9 +1,3 @@
-// Implementation from:
-// https://khan4019.github.io/front-end-Interview-Questions/sort.html
-
-// This approach conserves memory by passing the full array to each function and
-// swaping values in place.
-
 const quickSort = (array, left, right) => {
   if (left < right) {
     let pivot = right;
