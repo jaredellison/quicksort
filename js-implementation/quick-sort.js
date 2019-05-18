@@ -1,5 +1,3 @@
-let unsorted = [5, 2, 3, 4, 1];
-
 const quickSort = array => {
   if (array.length <= 1) return array;
 
@@ -22,4 +20,9 @@ const quickSort = array => {
   return left.concat(pivot, right);
 };
 
-console.log('Expect [1,2,3,4,5]:', quickSort(unsorted));
+let unsorted = [5, 2, 3, 4, 1];
+console.log('Expect [1,2,3,4,5]:', quickSort(unsorted, 0, unsorted.length - 1));
+unsorted = [5,4,3,2,1];
+console.log('Expect [1,2,3,4,5]:', quickSort(unsorted, 0, unsorted.length - 1));
+unsorted = [1,3,2,5,4];
+console.log('Expect [1,2,3,4,5]:', quickSort(unsorted, 0, unsorted.length - 1));
